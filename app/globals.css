@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .button:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.button:hover>.inner {
+  display: flex;
+}
+
+.cards:hover>div>.learn {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .cards div div:first-child .learn:hover {
+  display: flex
+} */
+
+/* .cards>div:nth-child(1) :nth-child(2):hover {
+  display: flex
+} */
