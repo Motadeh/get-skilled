@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Layer2 = () => {
     return (
-        <div className="h-[589px] px-20 -mx-20 py-[100px] bg-[#F9FBFB] flex flex-col justify-center items-center gap-[120px]">
+        <div className="h-[589px] px-20 -mx-20 py-[100px] bg-[#F9FBFB] flex flex-col justify-center items-center gap-[120px]" id="courses">
             <div className="h-[389px] flex flex-col gap-[48px] justify-start items-start self-stretch">
                 <div className="flex gap-[89px] justify-start items-start self-stretch">
                     <div className="w-[484px] h-[77px] text-[40px] leading-[48px] font-bold">Why You Should Choose Get Skilled</div>

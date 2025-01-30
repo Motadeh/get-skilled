@@ -11,7 +11,7 @@ const Layer1 = () => {
 
 
     return (
-        <div className="w-full h-[638px] flex justify-start">
+        <div className="w-full h-[638px] flex justify-start" id="home">
             <div className="w-[600px] h-[338px] mt-[116px] mr-[80px] flex flex-col justify-start items-start gap-5 ">
                 <div className="h-[270px] flex flex-col justify-start items-start self-stretch gap-6">
                     <div className="text-5xl font-bold break-words">Unlock your Learning Potential: Elevate your Future Now!</div>

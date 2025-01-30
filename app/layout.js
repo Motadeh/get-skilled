@@ -1,5 +1,8 @@
+// 'use client'
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import HeaderProvider, { HeaderContext, Providers, useHeader } from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,6 +20,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+  // const { headerState } = useHeader()
+
   return (
     <html lang="en">
       <head>
@@ -27,7 +33,16 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        {/* <HeaderContext> */}
+        {/* <Providers> */}
+        {/* <useHeader> */}
+        <HeaderProvider>
+          {children}
+        </HeaderProvider>
+        {/* </useHeader> */}
+        {/* </Providers> */}
+
+        {/* </HeaderContext> */}
       </body>
     </html>
   );

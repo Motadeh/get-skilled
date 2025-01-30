@@ -16,6 +16,12 @@ export default {
         "lato": ['Lato', 'sans-serif']
       },
     },
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      '120': '120%',
+    },
   },
   plugins: [],
 };

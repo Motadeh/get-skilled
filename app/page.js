@@ -1,3 +1,7 @@
+// 'use client'
+
+// import { HeaderContext } from "./components/providers";
+
 import Image from "next/image";
 import Layer1 from "./components/layer1";
 import Layer2 from "./components/layer2";
@@ -8,9 +12,14 @@ import Layer6 from "./components/layer6";
 import Layer7 from "./components/layer7";
 import Footer from "./components/footer";
 import Header from "./components/header";
+import { useHeader } from "./providers";
 
 export default function Home() {
+
+  // const headerState = useHeader();
+
   return (
+    // <HeaderContext>
     <div className="w-screen font-lato text-[#2B2B23]">
       <header>
         <Header />
@@ -33,9 +42,10 @@ export default function Home() {
         <Layer6 />
         <Layer7 />
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      <footer>
         <Footer />
       </footer>
     </div>
+    // </HeaderContext>
   );
 }
