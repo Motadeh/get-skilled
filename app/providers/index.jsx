@@ -3,7 +3,7 @@
 
 import React, { createContext, useState } from "react";
 
-const HeaderContext = createContext({})
+export const HeaderContext = createContext({})
 
 export default function HeaderProvider({ children }) {
 

@@ -14,6 +14,10 @@
   }
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -21,25 +25,240 @@ body {
 }
 
 /* .button:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 } */
 
+.button,
+.button>.inner,
+.button>.inner>svg {
+  transition: all 0.5s ease-in-out;
+
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+
 .button:hover>.inner {
+  padding: 4.41px 4.21px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.button:hover>.inner>svg {
   display: flex;
+}
+
+/* .home {
+  background-image: URL("../public/home_1.svg");
+  background-size: 90%;
+
+  transition: all 0.7s ease-in-out;
+
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+} */
+
+/* .home:hover {
+  background-size: 100%;
+} */
+
+.home:hover {}
+
+/* general home css */
+
+.preF,
+.home_1,
+.home_2,
+.home_3,
+.home_4,
+.home>.home_2>div,
+.home>.home_2>div>div:nth-child(2),
+.home>.home_2>div>div:nth-child(2)>div:first-child,
+.home>.home_2>div>div:nth-child(2)>div:nth-child(2),
+.home>.home_4>div,
+.home>.home_4>div>div:first-child,
+.home>.home_4>div>div:nth-child(2),
+.home>.home_4>div>div:nth-child(2)>div:first-child {
+  transition: all 0.7s ease-in-out;
+
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+
+}
+
+/* home_1 css */
+
+.home_1 {
+  background-image: URL("../public/home_l1.svg");
+  /* background-size: 100%; */
+}
+
+.home:hover .home_1 {
+  background-size: 110%;
+  background-position: right;
+}
+
+/* home_2 css */
+
+.home:hover .home_2 {
+  padding: 18.21px;
+  height: 82.97px;
+  top: 479.03px;
+  gap: 27.31px;
+  border-radius: 9.10px;
+  box-shadow: 0 -1.1379311084747314px 1.1379311084747314px 3.4137935638427734px rgba(0, 0, 0, 0.04);
+}
+
+.home:hover>.home_2>div {
+  gap: 13.66px;
+}
+
+.home:hover>.home_2>div>div:nth-child(2) {
+  gap: 4.55px;
+}
+
+.home:hover>.home_2>div>div:nth-child(2)>div:first-child {
+  font-size: 15.93px;
+  line-height: 22.76px;
+}
+
+.home:hover>.home_2>div>div:nth-child(2)>div:nth-child(2) {
+  font-size: 13.66px;
+  line-height: 18.21px;
+}
+
+/* home_3 css */
+
+.home_3 {
+  background-image: URL("../public/t_badge.svg");
+  background-size: 100%;
+}
+
+.home:hover .home_3 {
+  background-size: 120%;
+}
+
+/* home_4 css */
+
+.home:hover .home_4 {
+  padding: 12.37px 19.17px;
+  height: 68.75px;
+  width: 210px;
+  top: 355px;
+  left: 1199px;
+  gap: 28.75px;
+  border-radius: 9.58px;
+  box-shadow: 0 -1.1979166269302368px 1.1979166269302368px 3.593749761581421px rgba(0, 0, 0, 0.04);
+}
+
+.home:hover>.home_4>div {
+  gap: 9.58px;
+}
+
+.home:hover>.home_4>div>div:first-child {
+  margin-top: 6px;
+}
+
+.home:hover>.home_4>div>div:nth-child(2) {
+  gap: 4.79px;
+}
+
+.home:hover>.home_4>div>div:nth-child(2)>div:first-child {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+
+/* Layer 3 */
+
+/* learn */
+
+.learn,
+.cards:hover>div>.learn>div:nth-child(2) {
+  /* transition-property: justify-content, padding-top, gap, padding-left, padding-right;
+  transition-duration: 0.4s, 0.4s;
+  transition-delay: 0s, 0s, 0.6s, 0.6s, 0.6s;
+  transition-timing-function: ease-in */
+}
+
+.cards:hover>.beauty {
+  padding: 3.5px 7px;
 }
 
 .cards:hover>div>.learn {
-  display: flex;
   justify-content: space-between;
+  padding-top: 0px;
+  padding-left: 1px;
+  padding-right: 3px;
+  gap: 2px;
+
+  transition-property: justify-content, padding-top, gap, padding-left, padding-right;
+  transition-duration: 0.4s, 0.4s;
+  transition-delay: 0s, 0s, 0.6s, 0.6s, 0.6s;
+  transition-timing-function: ease-in
 }
 
-.preF {
-  opacity: 0.80;
-  background-image: linear-gradient(0deg, rgba(54, 129, 129, 0.60) 0%, rgba(54, 129, 129, 0.60) 100%), URL("../public/apply.jpeg");
-  /* background-image: URL("../public/apply.jpeg"), linear-gradient(0deg, rgba(54, 129, 129, 0.60) 0%, rgba(54, 129, 129, 0.60) 100%); */
-  background-size:100%;
+.cards:hover>div>.learn>div:nth-child(2) {
+  padding: 2.94px 2.81px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards:hover>div:nth-child(2)>div:nth-child(2) {
+  color: white;
+}
+
+.cards:hover>div:first-child>div:first-child>svg {
+  fill: white;
+  /* stroke: white; */
+
+}
+
+.cards:hover,
+.learn:hover,
+.cards:hover>.beauty,
+.cards:hover>div>.learn>div:nth-child(2),
+.cards:hover>div:nth-child(2)>div:nth-child(2) {
+  transition: all 0.7s ease-in;
+
+  -webkit-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  -moz-transition: all 0.7s ease-in;
+
+}
+
+.cards:hover>div:first-child>div:first-child>svg {
+  transition: all 0.2s ease-in;
+
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+
+}
+
+
+/* Layer 4 */
+
+.beauty>div:first-child>div {
+  background-image: URL("../public/beauty.svg");
+  background-size: 100%;
+}
+
+.beauty:hover>div:first-child>div {
+  background-size: 110%;
+}
+
+.beauty:hover>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
+  background-color: #166666;
+}
+
+
+.beauty>div:first-child>div {
   transition: all 0.7s ease-in-out;
 
   -webkit-transition: all 0.7s ease-in-out;
@@ -47,10 +266,150 @@ body {
   -moz-transition: all 0.7s ease-in-out;
 }
 
-/* .cards div div:first-child .learn:hover {
-  display: flex
+
+/* layer5 */
+
+.layer5>div:nth-child(2)>div:first-child {
+  /* background-image: URL("../public/tutor.png"); */
+  background-size: 100%;
+}
+
+.layer5,
+.layer5>div:first-child>div:nth-child(2)>div:first-child,
+.layer5>div:first-child>div:nth-child(2)>div:nth-child(2),
+.layer5>div:first-child>div:nth-child(2)>div:nth-child(3),
+.layer5>div:first-child>div:nth-child(2)>div:nth-child(2)>div,
+.layer5>div:first-child>div:nth-child(2)>div:nth-child(3)>div,
+.layer5>div:nth-child(2)>div:first-child {
+  transition: all 0.5s ease-in-out;
+
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+
+.button5,
+.button5>.inner,
+.button5>.inner>svg {
+  transition: all 0.3s ease-in-out;
+
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+.button5:hover>.inner {
+  padding: 4.41px 4.21px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.button5:hover>.inner>svg {
+  display: flex;
+}
+
+
+/* Layer 7 */
+
+.preF {
+  opacity: 0.80;
+  background-image: linear-gradient(0deg, rgba(54, 129, 129, 0.60) 0%, rgba(54, 129, 129, 0.60) 100%), URL("../public/apply.jpeg");
+  /* background-image: URL("../public/apply.jpeg"), linear-gradient(0deg, rgba(54, 129, 129, 0.60) 0%, rgba(54, 129, 129, 0.60) 100%); */
+  background-size: 100%;
+}
+
+@media (max-width: 1024px) {
+  .home:hover .home_1 {
+    background-size: 110%;
+    /* background-position: right; */
+  }
+
+  /* home_2 css */
+
+  .home:hover .home_2 {
+    padding: 13.21px;
+    height: 58.97px;
+    top: 392.03px;
+    gap: 23.31px;
+    border-radius: 9.10px;
+    box-shadow: 0 -1.1379311084747314px 1.1379311084747314px 3.4137935638427734px rgba(0, 0, 0, 0.04);
+  }
+
+  .home:hover>.home_2>div {
+    gap: 9.66px;
+  }
+
+  .home:hover>.home_2>div>div:nth-child(2) {
+    gap: 5.55px;
+  }
+
+  .home:hover>.home_2>div>div:nth-child(2)>div:first-child {
+    font-size: 11.93px;
+    line-height: 18.76px;
+  }
+
+  .home:hover>.home_2>div>div:nth-child(2)>div:nth-child(2) {
+    font-size: 9.66px;
+    line-height: 10.21px;
+  }
+
+
+  /* home_4 css */
+
+  .home:hover .home_4 {
+    padding: 9.37px 10.17px;
+    height: 50.75px;
+    width: 165px;
+    top: 297px;
+    left: 814px;
+    gap: 15.75px;
+    border-radius: 9.58px;
+    box-shadow: 0 -1.1979166269302368px 1.1979166269302368px 3.593749761581421px rgba(0, 0, 0, 0.04);
+  }
+
+  .home:hover>.home_4>div {
+    gap: 5.58px;
+  }
+
+  .home:hover>.home_4>div>div:first-child {
+    margin-top: 2px;
+  }
+
+  .home:hover>.home_4>div>div:nth-child(2) {
+    gap: 2.79px;
+  }
+
+  .home:hover>.home_4>div>div:nth-child(2)>div:first-child {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+
+
+
+  /* layer 5 */
+  .button5:hover>.inner {
+    padding: 4.41px 0.21px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+
+
+}
+
+
+/* .cards:hover>.learn {
+  padding-left: 1px;
+  padding-right: 3px;
+
+  transition: all 2s ease-in-out;
+
+  -webkit-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
 } */
 
-/* .cards>div:nth-child(1) :nth-child(2):hover {
-  display: flex
-} */
+/* hover:pt-2 hover:pl-px hover:pr-[3px] hover:justify-center */
