@@ -15,11 +15,19 @@ export default {
       fontFamily: {
         "lato": ['Lato', 'sans-serif']
       },
+      boxShadow: {
+        '5xl': '0 -1px 1px 3px rgba(0, 0, 0, 0.04)',
+        // 0 -1px 1px 3px rgba(0, 0, 0, 0.04)
+      },
     },
     backgroundSize: {
       'auto': 'auto',
       'cover': 'cover',
       'contain': 'contain',
+      '80': '80%',
+      '90': '90%',
+      '95': '95%',
+      '100': '100%',
       '120': '120%',
     },
   },
