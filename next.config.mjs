@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    basePath: '/get-skilled'
-};
+const nextConfig = {};
 
 export default nextConfig;
