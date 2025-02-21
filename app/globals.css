@@ -103,10 +103,14 @@ body {
 
 /* home_2 css */
 
+.home_2 {
+  box-shadow: 0 -1.1379311084747314px 1.1379311084747314px 3.4137935638427734px rgba(0, 0, 0, 0.04);
+}
+
 .home:hover .home_2 {
   padding: 18.21px;
   height: 82.97px;
-  top: 479.03px;
+  top: 339.09px;
   gap: 27.31px;
   border-radius: 9.10px;
   box-shadow: 0 -1.1379311084747314px 1.1379311084747314px 3.4137935638427734px rgba(0, 0, 0, 0.04);
@@ -144,11 +148,11 @@ body {
 /* home_4 css */
 
 .home:hover .home_4 {
-  padding: 12.37px 19.17px;
-  height: 68.75px;
-  width: 210px;
-  top: 355px;
-  left: 1199px;
+  padding: 10.37px 19.17px;
+  height: 63.75px;
+  width: 220px;
+  top: 214px;
+  /* left: 1199px; */
   gap: 28.75px;
   border-radius: 9.58px;
   box-shadow: 0 -1.1979166269302368px 1.1979166269302368px 3.593749761581421px rgba(0, 0, 0, 0.04);
