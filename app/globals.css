@@ -334,7 +334,7 @@ body {
   .home:hover .home_2 {
     padding: 13.21px;
     height: 58.97px;
-    top: 392.03px;
+    top: 257.03px;
     gap: 23.31px;
     border-radius: 9.10px;
     box-shadow: 0 -1.1379311084747314px 1.1379311084747314px 3.4137935638427734px rgba(0, 0, 0, 0.04);
@@ -365,8 +365,8 @@ body {
     padding: 9.37px 10.17px;
     height: 50.75px;
     width: 165px;
-    top: 297px;
-    left: 814px;
+    top: 160px;
+    /* left: 814px; */
     gap: 15.75px;
     border-radius: 9.58px;
     box-shadow: 0 -1.1979166269302368px 1.1979166269302368px 3.593749761581421px rgba(0, 0, 0, 0.04);
