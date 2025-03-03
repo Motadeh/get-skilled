@@ -9,7 +9,7 @@ const Layer1 = () => {
     return (
         <div className="w-full h-[488px] xl:h-[638px] relative pt-[50px] flex justify-between" id="home">
             <div className="lg:w-[430px] lg:w-[430px] xl:w-[484px] h-[288px] xl:h-[338px] mt-[56px] xl:mt-[86px] flex flex-col justify-start items-start gap-5 ">
-                <div className="h-[220px] lg:h-[194px] xl:h-[270px] flex flex-col justify-start items-start self-stretch gap-6">
+                <div className="h-[220px] lg:h-[194px] xl:h-[250px] flex flex-col justify-start items-start self-stretch gap-6">
                     <div className="text-2xl lg:text-3xl xl:text-5xl font-bold break-words">Unlock your Learning Potential: Elevate your Future Now!</div>
                     <div className="w-[360px] lg:w-[360px] xl:w-[460px] text-sm lg:text-sm xl:text-base font-normal break-words">An online learning platform that offers a seamless learning experience and limitless opportunities for growth and knowledge acquisition using videos, audios, or documents.</div>
                 </div>

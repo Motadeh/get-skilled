@@ -7,12 +7,20 @@ const Layer4 = () => {
     const num = [0, 1, 2]
 
     return (
-        <div className="h-[756px] px-20 py-20 flex flex-col justify-center items-center gap-[120px]">
-            <div className="h-[596px] flex flex-col justify-start items-center gap-10">
-                <div className="h-6 gap-4 text-[#F16122] text-base font-bold">Featured Courses</div>
-                <div className="h-16 w-[550px] text-center text-2xl font-semibold">Discover the best courses handpicked to propel your learning journey forward at affordable prices</div>
+        <div className="h-[708px] px-20 py-[60px] flex flex-col justify-center items-center gap-[120px]">
+            <div className="h-[588px] flex flex-col justify-start items-center gap-10">
+                <div className="h-[104px] flex flex-col justify-start items-center gap-2">
+                    <div className="h-8 flex flex-col justify-start items-center gap-2.5">
+                        <div className="px-3 py-1 bg-[#fff7f4] rounded-3xl flex flex-col justify-start items-center gap-4">
+                            <div className="text-center leading-no text-[#F16122] text-base font-bold">Featured Courses</div>
+                        </div>
+                    </div>
+                    <div className="h-16 flex flex-col justify-start items-center gap-4">
+                        <div className="w-[550px] text-center text-[#2B2B23] text-2xl font-semibold">Discover the best courses handpicked to propel your learning journey forward at affordable prices</div>
+                    </div>
+                </div>
                 <div className="h-[444px] w-full flex flex-col justify-start items-center gap-10">
-                    <div className="w-full flex justify-start items-start gap-8 mt-2">
+                    <div className="w-full flex justify-start items-start gap-8">
 
                         {num.map(() =>
                             <div className="beauty w-full flex-1 flex flex-col justify-start items-start gap-3.5 rounded-lg overflow-hidden border border-[#D1D5DB]">

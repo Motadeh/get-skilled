@@ -314,6 +314,37 @@ body {
 }
 
 
+/* Layer 6 */
+
+.FAQ:not(:active) {
+  transition: all 0.4s ease-in-out;
+
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+}
+
+/* .pm1 path,
+.pm2 path {
+  transition: all 0.4s ease-in-out;
+
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+
+  d: path("M8,2 L2,8")
+} */
+
+/* .FAQ div:nth-child(2),
+.pm {
+  transition: all 0.4s ease-in-out;
+
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+} */
+
+
 /* Layer 7 */
 
 .preF {

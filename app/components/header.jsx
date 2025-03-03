@@ -24,21 +24,23 @@ const Header = () => {
                             priority
                         />
                     </div>
-                    <div className="text-2xl font-semibold">Get Skilled</div>
+                    <div className="text-2xl font-semibold leading-loose">Get Skilled</div>
                 </div>
                 <div className="flex justify-center items-center gap-2 text-sm font-normal">
                     <Link href="/#home" onClick={() => setHeaderState(1)}>
-                        <div className={`flex justify-center items-center w-[62px] px-3 py-2 hover:text-primary ${headerState === 1 && 'border-b border-primary font-medium'}`}>Home</div>
+                        <div className={`flex justify-center items-center w-[62px] px-3 py-2 hover:text-primary ${headerState === 1 && 'border-b-[1.5px] border-primary font-medium'}`}>Home</div>
                     </Link>
                     <Link href="/#courses" onClick={() => setHeaderState(2)}>
-                        <div className={`flex justify-center items-center w-[62px] px-3 py-2 hover:text-primary ${headerState === 2 && 'border-b border-primary font-medium'}`}>Courses</div>
+                        <div className={`flex justify-center items-center w-[62px] px-3 py-2 hover:text-primary ${headerState === 2 && 'border-b-[1.5px] border-primary font-medium'}`}>Courses</div>
                     </Link>
                     <Link href="/#about" onClick={() => setHeaderState(3)}>
-                        <div className={`flex justify-center items-center w-[82px] px-3 py-2 hover:text-primary ${headerState === 3 && 'border-b border-primary font-medium'}`}>About Us</div>
+                        <div className={`flex justify-center items-center w-[82px] px-3 py-2 hover:text-primary ${headerState === 3 && 'border-b-[1.5px] border-primary font-medium'}`}>About Us</div>
                     </Link>
                 </div>
-                <div className="w-[118px] p-4 bg-primary rounded-md flex justify-center items-center gap-3">
-                    <div className="text-base font-semibold text-white">Get Started</div>
+                <div className="flex justify-start item-start">
+                    <div className="px-4 py-3 bg-primary rounded-md flex justify-center items-center gap-2">
+                        <div className="text-sm font-semibold text-white leading-tight">Get Started</div>
+                    </div>
                 </div>
             </div>
         </div>

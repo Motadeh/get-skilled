@@ -1,6 +1,14 @@
+'use client'
+
 import Image from "next/image"
+import Link from "next/link"
+import { useContext } from "react"
+import { HeaderContext } from "../providers"
 
 const Footer = () => {
+
+    const { headerState, setHeaderState } = useContext(HeaderContext)
+
     return (
         <div className="w-full bg-[#EDF7F7] pt-[100px] pb-16 flex justify-center items-center">
             <div className="flex-1 self-stretch px-14 flex flex-col justify-start items-start gap-6">
@@ -43,17 +51,19 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="h-full w-14 flex items-end">
-                            <Image
-                                className="w-12 h-12 "
-                                src="/scroll.svg"
-                                alt="logo"
-                                // fill
-                                width={580}
-                                height={455}
-                                priority
-                            />
-                        </div>
+                        <Link href="/#home" onClick={() => setHeaderState(1)}>
+                            <div className="h-full w-14 flex items-end">
+                                <Image
+                                    className="w-12 h-12 "
+                                    src="/scroll.svg"
+                                    alt="logo"
+                                    // fill
+                                    width={580}
+                                    height={455}
+                                    priority
+                                />
+                            </div>
+                        </Link>
 
                     </div>
                 </div>

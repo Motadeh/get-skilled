@@ -76,9 +76,9 @@ const Layer3 = () => {
         ]
     ];
     return (
-        <div className="w-full h-[918px] py-[100px] bg-white flex flex-col justify-center items-center gap-[120px]" id="courses">
+        <div className="w-full h-[918px] py-[60px] bg-white flex flex-col justify-center items-center gap-[120px]" id="courses">
             <div className="h-[718px] flex flex-col justify-start items-center self-stretch gap-10">
-                <div className="h-6 text-center text-[#F16122] text-base font-bold">Our Course Category</div>
+                <div className="h-6 text-center text-primary text-base font-bold">Course Category</div>
                 <div className="w-[388px] text-center text-2xl font-semibold">Explore our course categories for endless learning opportunities</div>
                 <div className="w-full h-[566px] flex flex-col justify-start items-center gap-10">
 
