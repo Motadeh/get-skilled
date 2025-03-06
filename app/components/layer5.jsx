@@ -25,9 +25,11 @@ const Layer5 = () => {
 
 
     return (
-        <div className="layer5 h-[907px] py-20 flex flex-col justify-start items-center gap-[100px]">
-            <div className="h-48 flex flex-col justify-start items-center gap-12">
-                <div className="h-20 w-[440px] text-center font-bold text-[32px] leading-10">Ready to redefine your future? Join us and thrive together.</div>
+        <div className="layer5 h-[831px] py-[60px] flex flex-col justify-start items-center gap-[60px]">
+            <div className="h-44 flex flex-col justify-start items-center gap-8">
+                <div className="h-20 flex flex-col justify-start items-center gap-4">
+                    <div className="h-20 w-[440px] text-center flex justify-start font-bold text-[32px] leading-10">Ready to redefine your future? Join us and thrive together.</div>
+                </div>
 
                 <div className="w-[360px] h-16 relative bg-white rounded-[40px] border-x border-t border-b-4 border-primary border-solid">
                     <div className={`${state.opt === 'tutor' && `left-3 ` || "left-48"} w-[156px] h-12 bg-primary rounded-[100px] absolute top-[6.5px]`} />
@@ -46,7 +48,7 @@ const Layer5 = () => {
 
             <div className="w-full flex justify-start items-center gap-14">
                 {/* <div className="w-1/2"> */}
-                    <div className={`w-[580px] h-[455px] bg-no-repeat ${state.opt === 'tutor' && "bg-[url('/tutor.png')]" || "bg-[url('/student.png')]"}`} />
+                <div className={`w-[580px] h-[455px] bg-no-repeat ${state.opt === 'tutor' && "bg-[url('/tutor.png')]" || "bg-[url('/student.png')]"}`} />
                 {/* </div> */}
                 <div className="w-1/2 h-full flex flex-col justify-start items-end">
 

@@ -76,10 +76,16 @@ const Layer3 = () => {
         ]
     ];
     return (
-        <div className="w-full h-[918px] py-[60px] bg-white flex flex-col justify-center items-center gap-[120px]" id="courses">
+        <div className="w-full h-[918px] bg-white flex flex-col justify-center items-center gap-[120px]" id="courses">
             <div className="h-[718px] flex flex-col justify-start items-center self-stretch gap-10">
-                <div className="h-6 text-center text-primary text-base font-bold">Course Category</div>
-                <div className="w-[388px] text-center text-2xl font-semibold">Explore our course categories for endless learning opportunities</div>
+                <div className="h-[104px] flex flex-col justify-start items-center gap-2">
+                    <div className="h-8 flex flex-col justify-start items-center gap-2.5">
+                        <div className="px-3 py-1 bg-[#f8fafa] rounded-3xl flex flex-col justify-start items-center gap-4">
+                            <div className="text-center text-[#369191] text-base font-bold leading-normal">Course Category</div>
+                        </div>
+                    </div>
+                    <div className="w-[388px] text-center text-2xl font-semibold">Explore our course categories for endless learning opportunities</div>
+                </div>
                 <div className="w-full h-[566px] flex flex-col justify-start items-center gap-10">
 
                     {array1.map((row) =>
